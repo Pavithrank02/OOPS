@@ -4,4 +4,14 @@ const Person = function(firstName , birthYear) {
 }
 
 const pavi = new Person('Pavi', 1997 );
-console.log(pavi);
+console.log(pavi); 
+
+
+Person.prototype.calcage = function () {
+    console.log(2022 - this.birthYear)
+}
+pavi.calcage(); 
+Person.prototype.species = " Homo Sapiens";
+console.log(pavi.species);
+
+console.log(pavi.__proto__);
